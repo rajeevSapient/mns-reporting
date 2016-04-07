@@ -1,0 +1,102 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$primary-background-color: #5c5858;
+$secondary-background-color: #ebdde2;
+.container{
+    width:90%;
+    margin:0 auto;
+    font-family: "Calibri", sans-serif;
+}
+#mnsLogo, #sapientLogo{
+    padding:10px;
+}
+#mnsLogo{
+    width:8%;
+    float:left;
+    @media screen and (max-width: $desktop-width) {
+        width: 11%;
+    }
+    @media screen and (max-width: $tablet-width) {
+        width: 14%;
+    }
+}
+#sapientLogo{
+    width: 15%;
+    float: right;
+    @media screen and (max-width: $desktop-width) {
+        width: 21%;
+    }
+    @media screen and (max-width: $tablet-width) {
+        width: 27%;
+    }
+}
+caption{
+    background-color:$primary-background-color;
+    border:1px solid black;
+    border-bottom:0;
+    padding:3px 0;
+    font-size:1.1rem;
+    color:#ffffff;
+}
+table{
+    border-collapse: collapse;
+    margin-top:20px;
+    tr:first-child{
+        font-weight: bold;
+    }
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td{
+    text-align: center;
+    padding:5px;
+}
+tr:nth-child(even){
+    background-color:$secondary-background-color;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#incidents{
+    float:left;
+    width:55%;
+    @media screen and (max-width: $desktop-width) {
+        width: 100%;
+        float: none;
+    }
+}
+#slaView, #incidentSummary{
+    float:right;
+    width:40%;
+    @media screen and (max-width: $desktop-width) {
+        width: 100%;
+        float: none;
+    }
+}
+h1{
+    font-size:1.5rem;
+}
+.sections{
+    border:1px solid black;
+    margin-top:20px;
+    h2{
+        border-bottom: 1px solid black;
+        margin:0;
+        padding:2px 20px;
+        background-color:$primary-background-color;
+        font-size: 1.2rem;
+        color:#ffffff;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    div{
+        padding:5px 20px;
+        span{
+            font-weight:bold;
+        }
+    }
+}
