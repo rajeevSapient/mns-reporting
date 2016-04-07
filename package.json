@@ -1,0 +1,35 @@
+{
+  "name": "mns-reporting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajeevSapient/mns-reporting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajeevSapient/mns-reporting/issues"
+  },
+  "homepage": "https://github.com/rajeevSapient/mns-reporting",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jspm": "^0.16.32",
+    "live-server": "^0.9.2"
+  },
+  "jspm": {
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "jquery": "npm:jquery@^2.2.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
