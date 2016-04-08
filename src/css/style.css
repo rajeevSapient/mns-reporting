@@ -26,6 +26,10 @@
     #sapientLogo {
       width: 27%; } }
 
+#printLogo {
+  float: right;
+  width: 32px; }
+
 caption {
   background-color: #5c5858;
   border: 1px solid black;
