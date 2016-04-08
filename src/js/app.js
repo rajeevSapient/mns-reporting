@@ -1,7 +1,8 @@
 var app = angular.module("weeklyReports", []);
 app.controller("reportsCtrl", function($scope) {
-    console.log("hey there!");
-
+    $scope.printOption=function(){
+        window.print();
+    }
     $scope.incidentData =
         [
              {
