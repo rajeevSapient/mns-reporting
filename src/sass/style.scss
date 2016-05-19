@@ -33,6 +33,7 @@ $secondary-background-color: #ebdde2;
 #printLogo{
     float: right;
     width: 32px;
+    cursor:pointer;
 }
  #edit-btn{
     background:url('../images/edit-btn.jpg');
@@ -52,12 +53,13 @@ $secondary-background-color: #ebdde2;
     padding-left:4px;
 }
 .edit-button{
-    background-image: url('../images/3.png');
+    background-image: url('../images/edit-button.png');
     height: 24px;
     width: 24px;
     float: left;
     background-size: 100%;
     margin-left: 4px;
+    cursor:pointer;
 }
 .content-div{
     border:solid 1px #000000;
