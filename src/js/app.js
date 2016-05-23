@@ -7,7 +7,6 @@
             area1.removeInstance(areaDiv);
             area1 = null;
         }
-
   });
 
 var app = angular.module("weeklyReports", []);
@@ -16,9 +15,7 @@ app.controller("reportsCtrl", function($scope,$http) {
         window.print();
     }
 
-
-
-    $http({ method: 'GET', url: '../mock-data/mydata.json' }).success(function (data) {
+    $http({ method: 'GET', url: '../mock-data/tableData.json' }).success(function (data) {
             $scope.tableData = data; // response data 
         }).
         error(function (data) {
@@ -41,14 +38,12 @@ app.directive('tableDir', function($http) {
     scope.$watch('dataFromTable', function() {
         dataFromTable=scope.dataFromTable;
     });
-        
     },
     templateUrl: function(tElement, tAttrs) {
         if(tElement[0].id!==""){
             return tElement[0].id + '.html';
         }
     }
-
   };
 });
 
