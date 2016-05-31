@@ -28,7 +28,47 @@
 
 #printLogo {
   float: right;
-  width: 32px; }
+  width: 32px;
+  cursor: pointer; }
+
+#edit-btn {
+  background: url("../images/edit-btn.jpg"); }
+
+.header-div {
+  background: #5c5858; }
+
+#editButton {
+  float: left;
+  width: 25px;
+  margin-left: 4px; }
+
+.edit-div {
+  width: auto;
+  height: auto;
+  padding-left: 4px; }
+
+.edit-button {
+  background-image: url("../images/edit-button.png");
+  height: 24px;
+  width: 24px;
+  float: left;
+  background-size: 100%;
+  margin-left: 4px;
+  cursor: pointer; }
+
+.content-div {
+  border: solid 1px #000000; }
+
+.sections h2.headlines {
+  border-bottom: none; }
+
+.headlines {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 2px 20px;
+  font-size: 1.2rem;
+  color: #ffffff; }
 
 caption {
   background-color: #5c5858;
@@ -84,14 +124,14 @@ h1 {
   .sections h2 {
     border-bottom: 1px solid black;
     margin: 0;
-    padding: 2px 20px;
+    padding: 2px 9px;
     background-color: #5c5858;
     font-size: 1.2rem;
     color: #ffffff; }
   .sections h3 {
     font-size: 1.1rem; }
   .sections div {
-    padding: 5px 20px; }
+    /*padding:5px 20px;*/ }
     .sections div span {
       font-weight: bold; }
 
