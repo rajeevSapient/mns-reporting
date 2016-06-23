@@ -9,8 +9,9 @@
         }
   });
 
-var app = angular.module("weeklyReports", []);
-app.controller("reportsCtrl", function($scope,$http) {
+//var app = angular.module("weeklyReports", []);
+
+/*app.controller("reportsCtrl", function($scope,$http) {
     $scope.printOption=function(){
         window.print();
     }
@@ -21,10 +22,23 @@ app.controller("reportsCtrl", function($scope,$http) {
         error(function (data) {
             console.log("error");
     });
-});
+});*/
+/*var app = angular.module("trendsReport", []);
+app.controller("trendsCtrl", function($scope,$http) {
+    $scope.printOption=function(){
+        window.print();
+    }
+
+    $http({ method: 'GET', url: '../mock-data/trendsData.json' }).success(function (data) {
+            $scope.trendsData = data; // response data 
+        }).
+        error(function (data) {
+            console.log("error");
+    });
+});*/
 
 /***directive to create table***/
-app.directive('tableDir', function($http) {
+/*app.directive('tableDir', function($http) {
   return {
    
     restrict: 'AE',
@@ -46,6 +60,6 @@ app.directive('tableDir', function($http) {
     }
   };
 });
-
+*/
    
 
